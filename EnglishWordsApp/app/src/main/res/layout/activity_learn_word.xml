@@ -11,11 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
+        android:contentDescription="close image button"
         android:src="@drawable/ic_close"
         android:layout_marginTop="10dp"
         android:layout_marginStart="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView2"
@@ -25,11 +27,13 @@
         android:layout_marginHorizontal="33dp"
         android:layout_marginTop="86dp"
         android:text="Galaxy"
+        android:fontFamily="@font/nunito_bold"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        tools:text="Galaxy" />
+        tools:text="Galaxy"
+        tools:ignore="HardcodedText" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -57,13 +61,16 @@
                 android:gravity="center"
                 android:text="1"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="One" />
+                android:fontFamily="@font/rubik_regular"
+                android:text="One"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -83,13 +90,16 @@
                 android:gravity="center"
                 android:text="2"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Two" />
+                android:fontFamily="@font/rubik_regular"
+                android:text="Two"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -109,13 +119,16 @@
                 android:gravity="center"
                 android:text="3"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Three" />
+                android:fontFamily="@font/rubik_regular"
+                android:text="Three"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -135,13 +148,16 @@
                 android:gravity="center"
                 android:text="4"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Four" />
+                android:fontFamily="@font/rubik_regular"
+                android:text="Four"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
@@ -153,7 +169,7 @@
         android:layout_height="58dp"
         android:layout_marginBottom="24dp"
         android:backgroundTint="#2574FF"
-        android:text="Skip"
+        android:text="@string/button_skip"
         android:textAllCaps="true"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -175,14 +191,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
             android:layout_marginTop="18dp"
+            android:contentDescription="correct answer icon"
             android:src="@drawable/ic_correct"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correct!"
+            android:text="@string/button_correct"
+            android:fontFamily="@font/rubik_regular"
             android:layout_marginStart="8dp"
             android:textColor="@color/white"
             android:textSize="22sp"
@@ -198,7 +217,8 @@
             android:textColor="#0EAD69"
             android:backgroundTint="@color/white"
             android:background="@drawable/shape_button_footer"
-            android:text="Continue"
+            android:text="@string/button_continue"
+            android:fontFamily="@font/nunito_bold"
             android:textAllCaps="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

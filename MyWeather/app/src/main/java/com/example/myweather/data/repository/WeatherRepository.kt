@@ -9,7 +9,7 @@ class WeatherRepository(private val apiService: WeatherApiService) {
     suspend fun getWeatherData(location: String): Result<WeatherResponse>{
         return try {
          val response: Response<WeatherResponse> = apiService.getCurrentWeather(
-             apiKey = "9fd51100b2fe4dab815181811261409",
+             apiKey = 'YOUR_API_KEY',
              location = location
          )
 

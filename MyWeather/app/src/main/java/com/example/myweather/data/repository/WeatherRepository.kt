@@ -17,7 +17,7 @@ class WeatherRepository(private val apiService: WeatherApiService) {
         return try {
             // Call the network service
             val response: Response<WeatherResponse> = apiService.getCurrentWeather(
-                apiKey = "9fd51100b2fe4dab815181811261409", // Hardcoded API Key (Should be secured in production)
+                apiKey = "9fd51100b2fe4dab815181811261409", // TODO (Should be secured)
                 location = location
             )
 
